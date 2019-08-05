@@ -1,0 +1,174 @@
+﻿nav, main, footer {display:block;} /* for older browsers to render new elements properly */
+
+/************NAVIGATION STYLES***************/
+nav {
+    position: fixed;
+    background-color: #FFFFE0;
+    width: 90%;
+    margin-top: -10px;
+}
+
+nav img {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 18vw;
+}
+
+nav ul {
+    margin-top: 40px;
+    float: right;
+    list-style: none;
+    padding: 15px 0;
+}
+
+nav li {
+    display: inline;
+    padding-right: 25px;
+}
+
+nav a {
+        color: #6A2B71;
+        font: 2vw Courier, Arial, sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        word-spacing: -1vw;
+    }
+
+a:hover {
+    color: #FFEA00;
+  
+}
+
+/*****************TITLE PIC STYLES**************/
+#mypic {
+    width:100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+/********CENTERED LAYOUT STYLES******************/
+#wrap {
+    width: 90%;
+    margin: 0 auto; /* automatically centers it left to right */
+    
+}
+
+/**********SOCIAL MEDIA LINKS**************/
+#socials {
+    float: right;
+   
+}
+
+
+/*******CELEBRITY PICS IN FAMOUS QUOTES PAGE*******/
+.celebPics img{
+    position: static;
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.celebPics p {
+    float: right;
+    text-shadow:2px 1px grey;
+    margin-top: 40px;
+   
+}
+
+/***********MAIN CONTENT AREA STYLES**************************/
+main {
+    text-align: left;
+    font: 25px "Comic Sans MS", Arial, sans-serif;
+    background-color: #FFFAFA;
+   
+}
+
+/*************TEXT STYLES*******************************/
+p,h2,h3 {
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #343434;
+}
+
+/************FOOTER**********************/
+footer img {
+    margin-top: 10px;
+}
+
+footer p {
+    margin-top: 10px;
+    
+}
+
+footer {
+    clear:both;
+    background-color: #FFFFE0;
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+
+
+/************FOR SMALL SCREEN SIZE*************/
+@media screen and (max-width: 800px) {
+    
+
+    nav {
+        position: static;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+
+    nav img {
+       display: block;
+        margin: 0 auto;
+        width:60%;
+        height:auto;
+        text-align: center;
+    }
+
+    nav a {
+            font-size: 5vw;
+    }
+
+    nav li {
+            display: block;
+            padding-right: 0em;
+            text-align: center;
+    }
+
+    nav ul {
+            margin-top: -1px;
+            float: none;
+            list-style: none;
+            padding: 0px;
+    }
+
+    p, h2, h3 {
+        font-size: 15px;
+      
+    }
+
+    .celebPics p {
+        text-shadow: none;
+    }
+
+    main {
+        border-radius: 15px;
+    }
+
+    footer {
+       width: 100%;
+       border-radius: 15px;
+    }
+
+    #socials {
+        display:none;
+        
+    }
+
+}
